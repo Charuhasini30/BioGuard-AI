@@ -1,0 +1,22 @@
+{
+  "ooty": {
+    "rainfall_factor": 1.3,
+    "ndvi_factor": 1.4
+  },
+  "coonoor": {
+    "rainfall_factor": 1.2,
+    "ndvi_factor": 1.3
+  },
+  "mudumalai": {
+    "rainfall_factor": 1.0,
+    "ndvi_factor": 1.1
+  },
+  "bandipur": {
+    "rainfall_factor": 0.8,
+    "ndvi_factor": 0.9
+  },
+  "nilgiris": {
+    "rainfall_factor": 1.4,
+    "ndvi_factor": 1.5
+  }
+}

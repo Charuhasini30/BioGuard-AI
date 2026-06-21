@@ -147,10 +147,10 @@ def analyze_dataset(df):
 def generate_regions(df):
 
     geo_file = os.path.join(
-        PROJECT_ROOT,
-        "data",
-        "geo_regions.json"
-    )
+    BASE_DIR,
+    "data",
+    "geo_regions.json"
+)
 
     with open(geo_file, "r", encoding="utf-8") as f:
         GEO = json.load(f)
