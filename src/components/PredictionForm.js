@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import DashboardCards from "./DashboardCards";
 import ForecastChart from "./ForecastChart";
-import { useEffect } from "react";
 import forestData from "../data/forestData";
 import RiskTimeline from "./RiskTimeline";
 import ConservationPlanner from "./ConservationPlanner";
@@ -27,7 +26,7 @@ function PredictionForm() {
   });
 
   const [result, setResult] = useState(null);
-  const [regionData, setRegionData] = useState(null);
+  const [, setRegionData] = useState(null);
 
   const handleChange = (e) => {
     setFormData({

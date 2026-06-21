@@ -236,13 +236,21 @@ title="video3"
 
 <div className="social-links">
 
-<a href="#">LinkedIn</a>
+<a href="https://linkedin.com" target="_blank" rel="noreferrer">
+  LinkedIn
+</a>
 
-<a href="#">GitHub</a>
+<a href="https://github.com" target="_blank" rel="noreferrer">
+  GitHub
+</a>
 
-<a href="#">YouTube</a>
+<a href="https://youtube.com" target="_blank" rel="noreferrer">
+  YouTube
+</a>
 
-<a href="#">Research Papers</a>
+<a href="/publications">
+  Research Papers
+</a>
 
 </div>
 

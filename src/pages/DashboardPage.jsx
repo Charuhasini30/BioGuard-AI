@@ -16,33 +16,28 @@ import RegionRanking from "../components/RegionRanking";
 import SearchRegion from "../components/SearchRegion";
 import EcosystemSummary from "../components/EcosystemSummary";
 import TopRiskRegion from "../components/TopRiskRegion";
-// import HomePage from "../pages/HomePage";
-// import { Routes, Route } from "react-router-dom";
-// import AboutPage from "../pages/AboutPage";
 
 function App() {
   const [result, setResult] = useState(null);
-  const [selectedRegion,setSelectedRegion] = useState(null);
-  const [datasetResult, setDatasetResult] = useState(null);
-  const [regionData, setRegionData] = useState(null);
-  const [explanation, setExplanation] = useState(null);
+  const [selectedRegion] = useState(null);
+  const [, setRegionData] = useState(null);
+  const [, setExplanation] = useState(null);
   const [resultGlobal, setResultGlobal] = useState(null);
-//   const [showDashboard, setShowDashboard] = useState(false);
-  // 🌍 Region click → backend prediction
-  const handleRegionSelect = async (regionName) => {
-    try {
-      const res = await fetch("http://localhost:8000/predict", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ region: regionName }),
-      });
 
-      const data = await res.json();
-      setResult(data);
-    } catch (error) {
-      console.error("Error fetching prediction:", error);
-    }
-  };
+  // const handleRegionSelect = async (regionName) => {
+  //   try {
+  //     const res = await fetch("http://localhost:8000/predict", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({ region: regionName }),
+  //     });
+
+  //     const data = await res.json();
+  //     setResult(data);
+  //   } catch (error) {
+  //     console.error("Error fetching prediction:", error);
+  //   }
+  // };
 
   // 📄 PDF Report Generator
   const downloadReport = async () => {
@@ -70,29 +65,7 @@ function App() {
       console.error("Error generating report:", error);
     }
   };
-//   if (!showDashboard) {
-//   return (
-//     <Routes>
 
-//       <Route
-//         path="/"
-//         element={
-//           <HomePage
-//             onLaunch={() =>
-//               setShowDashboard(true)
-//             }
-//           />
-//         }
-//       />
-
-//       <Route
-//         path="/about"
-//         element={<AboutPage />}
-//       />
-
-//     </Routes>
-//  );
-// }
 
   return (
     <div className="app">

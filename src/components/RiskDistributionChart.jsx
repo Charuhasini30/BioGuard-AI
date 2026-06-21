@@ -2,12 +2,10 @@ import {
   PieChart,
   Pie,
   Cell,
-  Tooltip,
-  Legend,
-  ResponsiveContainer
+  Tooltip
 } from "recharts";
 
-const COLORS = ["#ef4444", "#f59e0b", "#22c55e"];
+
 
 function RiskDistributionChart({ data = [] }) {
   return (
