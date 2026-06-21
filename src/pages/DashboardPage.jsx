@@ -44,7 +44,7 @@ function App() {
     if (!result) return;
 
     try {
-      const res = await fetch("http://localhost:8000/generate-report", {
+      const res = await fetch("https://bioguard-ai-zzn6.onrender.com/generate-report", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
