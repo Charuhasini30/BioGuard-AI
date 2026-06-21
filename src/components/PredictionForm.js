@@ -37,7 +37,7 @@ function PredictionForm() {
 
   const predict = async () => {
   try {
-    const response = await axios.post("http://127.0.0.1:8000/predict-region", {
+    const response = await axios.post("https://bioguard-ai-zzn6.onrender.com/predict-region", {
   region: selectedRegion
 });
 
@@ -46,13 +46,13 @@ function PredictionForm() {
 
     // 🌍 NEW: region intelligence call
     const regionRes = await axios.post(
-      "http://127.0.0.1:8000/region-risk",
+      "https://bioguard-ai-zzn6.onrender.com/region-risk",
       formData
     );
 
     setRegionData(regionRes.data);
     const explainRes = await axios.post(
-  "http://127.0.0.1:8000/explain",
+  "https://bioguard-ai-zzn6.onrender.com/explain",
   formData
 );
 
@@ -70,7 +70,7 @@ setExplanation(explainRes.data.explanation);
   try {
 
     const response = await fetch(
-      "http://127.0.0.1:8000/generate-report",
+      "https://bioguard-ai-zzn6.onrender.com/generate-report",
       {
         method: "POST",
         headers: {

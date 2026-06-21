@@ -14,7 +14,7 @@ function DatasetUpload(props) {
       formData.append("file", file);
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/upload-dataset",
+        "https://bioguard-ai-zzn6.onrender.com/upload-dataset",
         formData
       );
 
