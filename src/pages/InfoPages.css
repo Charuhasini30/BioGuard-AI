@@ -1,0 +1,156 @@
+.about-page{
+  background:#f8faf8;
+}
+
+.about-hero{
+  height:60vh;
+  background-image:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-overlay{
+  height:100%;
+  background:rgba(0,0,0,0.55);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  text-align:center;
+}
+
+.hero-overlay h1{
+  font-size:60px;
+}
+
+.about-section{
+  display:flex;
+  align-items:center;
+  gap:50px;
+  padding:80px;
+}
+
+.about-section img{
+  width:45%;
+  border-radius:15px;
+}
+
+.about-text{
+  flex:1;
+}
+
+.about-text h2{
+  color:#2d6a4f;
+}
+
+.reverse{
+  flex-direction:row-reverse;
+}
+
+.tech-section{
+  padding:80px;
+  text-align:center;
+}
+
+.tech-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.tech-card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.developer-section{
+  padding:80px;
+  text-align:center;
+}
+
+.developer-card{
+  max-width:800px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  gap:30px;
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.developer-card img{
+  width:120px;
+}
+.quote-section{
+  padding:80px 40px;
+  text-align:center;
+  background:#2d6a4f;
+  color:white;
+}
+
+.quote-section h2{
+  max-width:900px;
+  margin:auto;
+  font-size:34px;
+  font-weight:300;
+}
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 10%;
+  background: #ffffff;
+  color: #1b4332;
+}
+
+.info-section.dark {
+  background: #e9f7ef;
+}
+
+.info-section h2 {
+  font-size: 34px;
+  color: #14532d;
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #2d6a4f;
+}
+
+.info-section ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.info-section ul li {
+  margin: 10px 0;
+  font-size: 17px;
+  color: #1b4332;
+}
+
+/* IMAGE STYLE */
+.section-img {
+  width: 420px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #0b2e1f;
+  color: white;
+  font-size: 14px;
+}
